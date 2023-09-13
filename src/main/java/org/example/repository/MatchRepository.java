@@ -2,9 +2,11 @@ package org.example.repository;
 
 import org.example.model.Match;
 
+import java.util.UUID;
+
 public class MatchRepository implements CRUDRepository<Match> {
     @Override
-    public Match findById(int id) {
+    public Match findById(UUID id) {
         return null;
     }
 

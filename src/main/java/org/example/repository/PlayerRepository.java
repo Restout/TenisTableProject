@@ -1,15 +1,22 @@
 package org.example.repository;
 
 import org.example.model.Player;
+import org.example.utils.HibernateFactory;
+import org.hibernate.Session;
+
+import java.util.UUID;
 
 public class PlayerRepository implements CRUDRepository<Player> {
     @Override
-    public Player findById(int id) {
-        return null;
+    public Player findById(UUID id) {
+        return HibernateFactory.getSession().openSession().get(Player.class, id);
     }
 
     @Override
     public void save(Player entity) {
+        Session session = HibernateFactory.getSession().openSession();
+        session.save(entity);
+        session.close();
 
     }
 

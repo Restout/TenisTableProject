@@ -1,7 +1,9 @@
 package org.example.repository;
 
+import java.util.UUID;
+
 public interface CRUDRepository<T> {
-    T findById(int id);
+    T findById(UUID id);
 
     void save(T entity);
 
