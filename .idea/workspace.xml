@@ -9,19 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cc11032-4ed5-4431-aa53-eae2f9aaa463" name="Changes" comment="Added:Hibernate Configured">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TenisTableProject_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/MatchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/PlayerMatchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/CreateMatchServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/MatchScoreServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/createMatchPage.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/views/createMatchStyle.css" afterDir="false" />
+    <list default="true" id="7cc11032-4ed5-4431-aa53-eae2f9aaa463" name="Changes" comment="Added:JSP connection to servlet and Post Method for NewMatch">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/MatchDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/FinishedMatchesPersistanceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/MatchScoreCalculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/OngoingMatchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/baseServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/repository/PlayerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/PlayerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/servlet/CreateMatchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/servlet/CreateMatchServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,7 @@
       <deployment>
         <artifact name="TenisTableProject:Web exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/TenisTableProject_Web_exploded" />
+            <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
@@ -185,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694602014847</updated>
       <workItem from="1694602016409" duration="19836000" />
-      <workItem from="1694693014037" duration="8123000" />
+      <workItem from="1694693014037" duration="11560000" />
     </task>
     <task id="LOCAL-00001" summary="Innitional comit with Hiber configuration">
       <created>1694604257582</created>
@@ -208,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1694618689388</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added:JSP connection to servlet and Post Method for NewMatch">
+      <created>1694956304372</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694956304372</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,15 +231,16 @@
     <MESSAGE value="Innitional comit with Hiber configuration" />
     <MESSAGE value="Added:Models for Match and Player created" />
     <MESSAGE value="Added:Hibernate Configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:Hibernate Configured" />
+    <MESSAGE value="Added:JSP connection to servlet and Post Method for NewMatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:JSP connection to servlet and Post Method for NewMatch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/servlet/CreateMatchServlet.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
+          <line>28</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
