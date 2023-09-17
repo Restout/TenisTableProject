@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import java.util.UUID;
 
 @Entity
 @Data
@@ -15,7 +16,7 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 public class Match {
     @Id
-    private int id;
+    private UUID id;
     @ManyToOne
     @JoinColumn(name = "Player1", referencedColumnName = "id")
     private Player firstPlayerId;

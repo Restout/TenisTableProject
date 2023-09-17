@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="TenisTableProject:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/TenisTableProject_Web_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="TenisTableProject" />
+          <element id="jpa-descriptors" facet="TenisTableProject/jpa/JPA" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="TenisTableProject/web/Web" />
+    </root>
+  </artifact>
+</component>
